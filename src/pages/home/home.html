@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar>
+  <img src="assets/imgs/prud.jpg" height="45px" width="45px">
+  <ion-title text-right class="title-ape">APE DEMO</ion-title>
+</ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-label class="label-uname" color="primary">Username</ion-label>
+  <ion-input [(ngModel)]="username" type="text"></ion-input>
+
+  <ion-label class="label-pin" color="primary">PIN</ion-label>
+  <ion-input [(ngModel)]="password" type="password"></ion-input>
+  <br>
+  <div text-center>
+    <button class="btn-signin" ion-button color="primary" (click)="signIn(username, password)">Sign in</button>
+  </div>
+</ion-content>
